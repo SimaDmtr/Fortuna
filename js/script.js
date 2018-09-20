@@ -11,6 +11,17 @@ $(document).ready(function () {
         $(selectTab).fadeIn();
         return false;
     });
+    $('.tab-content_left').hide();
+    $('.tab-content_left:first').show();
+    $('.tabsLeft a').click(function () {
+        let tabs = $('.activeLeft');
+        $(tabs).removeClass('activeLeft');
+        $(this).parent().addClass('activeLeft');
+        $('.tab-content_left').hide();
+        var selectTab = $(this).attr("href");
+        $(selectTab).fadeIn();
+        return false;
+    });
     $('.change').click(function(){
         let tabs = $('.active');
         let visibleTab  = $('.tabs-container :visible').first();
@@ -39,8 +50,5 @@ $(document).ready(function () {
     $('.menuTrigger').click(function () {
         $('.navMenuWrapper').slideToggle(500);
     })
-
-
-
 });
 
