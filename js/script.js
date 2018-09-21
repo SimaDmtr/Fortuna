@@ -1,45 +1,26 @@
 $(document).ready(function () {
-    $('.tab-content').hide();
-    $('.tab-content:first').show();
-    $('.tabItem:first').addClass('active');
-    $('.tabs a').click(function () {
-        let tabs = $('.active');
-        $(tabs).removeClass('active');
-        $(this).parent().addClass('active');
-        $('.tab-content').hide();
-        var selectTab = $(this).attr("href");
-        $(selectTab).fadeIn();
-        return false;
+
+    $("#leftTabs").tabs();
+    $( ".tab" ).tabs();
+
+    var num = 0, len = $('.articlesNav').length-1;
+    $( ".next, .prev" ).on("click",function() {
+        num += $(this).is(".next") ? 1 : -1;
+        num === len && (num = 0);
+        num === -1 && (num = len -1)
+        $( ".tab" ).tabs( "option", "active", num );
     });
-    $('.tab-content_left').hide();
-    $('.tab-content_left:first').show();
-    $('.tabsLeft a').click(function () {
-        let tabs = $('.activeLeft');
-        $(tabs).removeClass('activeLeft');
-        $(this).parent().addClass('activeLeft');
-        $('.tab-content_left').hide();
-        var selectTab = $(this).attr("href");
-        $(selectTab).fadeIn();
-        return false;
-    });
-    $('.change').click(function(){
-        let tabs = $('.active');
-        let visibleTab  = $('.tabs-container :visible').first();
-        let canChangeUp = $(visibleTab).next('.tab-content').length;
-        let canChangeDown = $(visibleTab).prev('.tab-content').length;
-        if ($(this).hasClass('next') && canChangeUp){
-            tabs.removeClass('active');
-            tabs.next('.tabItem').addClass('active');
-            visibleTab.hide();
-            $(visibleTab).next('.tab-content').fadeIn()
-        }
-        if ($(this).hasClass('prev') && canChangeDown){
-            tabs.removeClass('active');
-            tabs.prev('.tabItem').addClass('active');
-            visibleTab.hide();
-            $(visibleTab).prev('.tab-content').fadeIn()
-        }
-    })
+    (function($) {
+        $(function() {
+
+            $('.articlesNav  li').click(function() {
+                $('html, body').animate({scrollTop: 0},500);
+                return false;
+            })
+
+        })
+    })(jQuery)
+    
     $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             items: 1,

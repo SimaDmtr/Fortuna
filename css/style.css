@@ -120,6 +120,7 @@ a,span,p{
     display: flex;
     align-items: center;
     width: 100% ;
+
 }
 .leftNavList li a{
     text-transform: uppercase;
@@ -129,14 +130,15 @@ a,span,p{
     padding-left: 50px;
     position: relative;
 }
-.leftNavList li:hover,.leftNavList li.activeLeft{
-    -webkit-transform: scaleX(1.1) ;
-    -moz-transform: scaleX(1.1);
-    -ms-transform: scaleX(1.1);
-    -o-transform: scaleX(1.1);
-    transform: scaleX(1.1);
+.leftNavList li:hover {
+    -webkit-transform: scaleX(1.05);
+    -moz-transform: scaleX(1.05);
+    -ms-transform: scaleX(1.05);
+    -o-transform: scaleX(1.05);
+    transform: scaleX(1.05);
+
 }
-.leftNavList li a:hover,.leftNavList li.activeLeft a{
+.leftNavList li a:hover,.leftNavList .ui-tabs-active a{
     background-color: #39464a;
     color: #ffffff;
     -webkit-transition: all 0.2s ease-in;
@@ -147,7 +149,7 @@ a,span,p{
 }
 
 
-.leftNavList li a:hover:after,.leftNavList li.activeLeft a:after{
+.leftNavList li a:hover:after{
     position: absolute;
     content: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPCAQAAACYNP27AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCREWBwVVbf8oAAAAnUlEQVQY02NsYKgXZdjCkN94ggEJMP7nYDjNoMPwicGt8SRCmJnxjwM/gwsDO0OYw/6DT2HCTAwMjR0MlQwMDHwMu+rNkYSxSTBBKHQJJpg2VAnGBiRn1W9g8GdgYHjBoMyEJJjJ4M/AwPCdIbrxGxOS4DQGBobvDD6N++BmowpChdEFGRiYsAlCwuQygwqqICRM1jPYMyQiCzIwAAAfwzgDLlePVwAAAABJRU5ErkJggg==");
     right: 20px;
@@ -212,12 +214,23 @@ header{
     overflow: hidden;
     width: 31.5%;
     margin-bottom: 30px;
+    min-width: 280px;
 }
 .card:hover .cardInfo{
     background-color: #39464a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .card:hover .cardInfo span{
     color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 .card img{
     display: block;
@@ -265,7 +278,7 @@ header{
 .articlesNav li+li{
     margin-left: 8px;
 }
-.active a {
+.articlesNav .ui-tabs-active a {
     font-size: 48px!important;
     color: #39464a!important;
 }
