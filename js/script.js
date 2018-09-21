@@ -20,14 +20,20 @@ $(document).ready(function () {
 
         })
     })(jQuery)
-    
+
     $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".cardLeft").owlCarousel({
             items: 1,
             dots: false,
-            nav: true,
         });
     });
+    $(document).ready(function () {
+        $(".cardBack").owlCarousel({
+            items: 1,
+            dots: false,
+        });
+    });
+
     $('.menuTrigger').click(function () {
         $('.navMenuWrapper').slideToggle(500);
     })

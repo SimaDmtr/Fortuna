@@ -312,3 +312,91 @@ footer{
 .createdBy{
     font-weight: 700;
 }
+                                                            /* Card More */
+.cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardLeftWrapper{
+    width: 51%;
+}
+.cardRight{
+    width: 45%;
+}
+.cardLeftWrapper img{
+    width: 100%;
+}
+.cardSizes{
+    display: flex;
+    flex-direction: column;
+    height: 69px;
+    position: relative;
+}
+.cardSizes span{
+    text-transform: uppercase;
+    line-height: 20px;
+}
+.cardSizes span+span{
+    margin-top: 7px;
+}
+.cardSizes:after,.cardAbout:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 52%;
+    bottom: 0;
+    border-bottom: 1px solid black;
+}
+.cardAbout{
+    padding: 18px 0;
+    position: relative;
+}
+.cardAbout p{
+    line-height: 24px;
+}
+.sizesLength{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 42px;
+
+}
+.sizesLength span {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.colorsWrap .bold{
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.cardRightGallery{
+    max-height: 525px;
+    display: flex;
+}
+.cardBackWrapper{
+    float: left;
+    width: 350px;
+}
+.cardBackWrapper img{
+    width: 100%;
+    display: block;
+}
+.colorsWrap{
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    height: 100%    ;
+}
+.cardColors img {
+    width: 100%;
+    display: block;
+}
+.cardColors{
+    margin-top: 15px;
+}
+.cardColors div+div{
+    margin-top: 10px;
+}

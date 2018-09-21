@@ -5,10 +5,12 @@
     <title>Фортуна</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../fonts/stylesheet.css">
-    <link rel="stylesheet" href="../css/normalize.css">
+
     <link rel="stylesheet" href="../icomoon/style.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <script src="../js/jquery-1.11.0.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/script.js"></script>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <div class="leftNav">
             <div class="logo invisLink"><a href="../catalog.html"></a></div>
             <ul class="leftNavList  tabsLeft">
-                <li><a href="../catalog.html#tabs-3">Новинки</a></li>
+                <li><a href="../catalog.html#tabs-1">Новинки</a></li>
                 <li><a href="../catalog.html#tabs-2">Платья весна-лето</a></li>
                 <li><a href="../catalog.html#tabs-3">Платья осень-зима</a></li>
                 <li><a href="../catalog.html#tabs-4">Костюмы, комплекты</a></li>
@@ -44,8 +46,53 @@
                 <li><a href="#"><span class="icon-instagram"></span></a></li>
             </ul>
         </header>
-        <div class="content">
-
+        <div class="content cfix cardWrapper">
+            <div class="cardLeftWrapper">
+                <div class="cardLeft owl-carousel">
+                    <img data-hash="one" src="../img/jpg/card_more.jpg" alt="">
+                    <img data-hash="two" src="../img/jpg/card_more.jpg" alt="">
+                    <img data-hash="three" src="../img/jpg/card_more.jpg" alt="">
+                </div>
+            </div>
+            <div class="cardRight">
+                <div class="cardRightTop">
+                    <div class="cardSizes">
+                        <span>Модель: <span class="bold">625</span></span>
+                        <span>Размеры: <span class="bold">48 - 58</span></span>
+                    </div>
+                    <div class="cardAbout">
+                        <p>Кардиган весна - осень из трикотажного<br>
+                            полотна на флисе. Необычная отделка по<br>
+                            горловине, борту, краю карманов и низу<br>
+                            рукавов, делают изделие особенным<br>
+                            и комфортным.
+                        </p>
+                    </div>
+                    <div class="sizesLength">
+                        <span>Длина рукава: <span class="bold">30 см</span></span>
+                        <span>Обхват талии: <span class="bold">60 см</span></span>
+                        <span>Обхват груди: <span class="bold">90 см</span></span>
+                        <span>Обхват бедер: <span class="bold">90 см</span></span>
+                    </div>
+                </div>
+                <div class="cardRightGallery cfix">
+                    <div class="cardBackWrapper">
+                        <div class="cardBack owl-carousel">
+                            <img data-hash="one" src="../img/jpg/card_more_back.jpg" alt="">
+                            <img data-hash="two" src="../img/jpg/card_more_back.jpg" alt="">
+                            <img data-hash="three" src="../img/jpg/card_more_back.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="colorsWrap">
+                        <span class="bold">Другие расцветки</span>
+                        <div class="cardColors">
+                            <div><a href="#one"><img src="../img/jpg/card_more_color.jpg" alt=""></a></div>
+                            <div><a href="#two"><img src="../img/jpg/card_more_color.jpg" alt=""></a></div>
+                            <div><a href="#three"><img src="../img/jpg/card_more_color.jpg" alt=""></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="cfix">
             <div class="footerInner cfix">
