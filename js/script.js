@@ -1,26 +1,21 @@
 $(document).ready(function () {
 
     $("#leftTabs").tabs();
-    $( ".tab" ).tabs();
+    $(".tab").tabs();
 
-    var num = 0, len = $('.articlesNav').length-1;
-    $( ".next, .prev" ).on("click",function() {
+    var num = 0, len = $('.articlesNav').length - 1;
+    $(".next, .prev").on("click", function () {
         num += $(this).is(".next") ? 1 : -1;
         num === len && (num = 0);
-        num === -1 && (num = len -1)
-        $( ".tab" ).tabs( "option", "active", num );
+        num === -1 && (num = len - 1)
+        $(".tab").tabs("option", "active", num);
     });
-    (function($) {
-        $(function() {
 
-            $('.articlesNav  li').click(function() {
-                $('html, body').animate({scrollTop: 0},500);
-                return false;
-            })
 
-        })
-    })(jQuery)
+    $(".tabsLeft li,.articlesNav  li").click(function () {
+        $("html, body").animate({scrollTop: 0}, "slow");
 
+    });
     $(document).ready(function () {
         $(".cardLeft").owlCarousel({
             items: 1,

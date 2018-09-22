@@ -13,8 +13,7 @@ body {
     background-color: #dddfe0;
     color: #ffffff;
     padding: 0;
-    font-family: HelveticaNeueCyr;
-
+    font-family: "PT Serif";
 }
 
 .invisLink {
@@ -59,7 +58,7 @@ ul {
     display: block;
     clear: both;
 }
-a,span,p{
+a,span,p, h1,h2,h3,h4,h5,h6{
     font-family: "PT Serif";
     color: #282828;
     font-size: 20px;
@@ -198,6 +197,7 @@ header{
     /* content */
 .content {
     margin-top: 20px;
+    min-height: calc(100vh - 153px);
 }
                                                 /*  content  */
 .banner{
@@ -208,6 +208,12 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 
+}
+.catalog{
+    margin-bottom: 40px;
+}
+.main{
+    margin-bottom: 30px;
 }
 .card{
     height: 640px;
@@ -283,9 +289,7 @@ header{
     color: #39464a!important;
 }
                                                     /*  footer  */
-footer{
-    margin-top: 40px;
-}
+
 .footerInner{
     width: 500px;
     background-color: #c2c8ca;
@@ -317,6 +321,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .cardLeftWrapper{
     width: 51%;
@@ -399,4 +404,61 @@ footer{
 }
 .cardColors div+div{
     margin-top: 10px;
+}
+                                            /* About */
+
+.about{
+    padding-bottom: 13px;
+}
+.aboutImages{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.aboutImages div{
+    width: 32%;
+    overflow: hidden;
+    min-width: 300px;
+    height: 564px;
+}
+.aboutImages img{
+    height: 100%;
+}
+.aboutText{
+    margin-top: 13px;
+    position: relative;
+}
+.aboutText p{
+    line-height: 30px;
+}
+.aboutText p+p{
+    margin-top: 29px;
+}
+.aboutLogo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+                            /* Cooperation */
+.cooperationInner{
+    position: relative;
+
+}
+.cooperationInner p{
+    margin-top: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.cooperationInner h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #333333;
+    padding-top: 10px;
+}
+.cooperationInner img{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 10px;
 }
