@@ -548,7 +548,7 @@ header {
 
 
  /*Media Queries*/
-@media (min-width: 320px)and (max-width: 1081зx) {
+@media (min-width: 320px)and (max-width: 1081px) {
     .leftNavWrapper {
         width: 320px;
         -webkit-transition: all 0.3s;
