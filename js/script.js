@@ -29,8 +29,22 @@ $(document).ready(function () {
         });
     });
 
-    $('.menuTrigger').click(function () {
-        $('.navMenuWrapper').slideToggle(500);
+
+    $('.trigger').click(function () {
+        $('.navMenu').slideToggle(500);
+    });
+
+    $(".burger").click(function() {
+        if($('.leftNavWrapper').hasClass("show")){
+            $('.leftNavWrapper').removeClass("show")
+        } else{
+            $('.leftNavWrapper').addClass("show")
+        }
+    });
+    $(".leftNavList li").click(function () {
+        $('.leftNavWrapper').removeClass("show");
     })
+
+
 });
 

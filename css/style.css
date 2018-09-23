@@ -3,7 +3,6 @@
     outline: none;
 }
 
-
 fieldset {
     border: none;
 }
@@ -44,9 +43,11 @@ button {
     background: transparent;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -58,38 +59,44 @@ ul {
     display: block;
     clear: both;
 }
-a,span,p, h1,h2,h3,h4,h5,h6{
+
+a, span, p, h1, h2, h3, h4, h5, h6 {
     font-family: "PT Serif";
     color: #282828;
     font-size: 20px;
     letter-spacing: 0.05em;
 }
+
 .containerInner {
     width: calc(100% - 360px);
     float: right;
     padding: 0 15px;
 }
-.containerOuter{
+
+.containerOuter {
     max-width: 1560px;
     margin: 0 auto;
 }
 
-.navMenu a{
+.navMenu a {
     text-transform: uppercase;
 }
-                                                    /*Navigation Left*/
-.leftNavWrapper{
+
+/*Navigation Left*/
+.leftNavWrapper {
     float: left;
     height: 100vh;
     background-color: #cccccc;
     width: 360px;
     position: fixed;
 }
-.logo{
+
+.logo {
     height: 152px;
     background: url("../img/png/logo.png") center 27px no-repeat;
     position: relative;
 }
+
 .logo:after {
     content: '';
     display: block;
@@ -99,12 +106,14 @@ a,span,p, h1,h2,h3,h4,h5,h6{
     bottom: 0;
     border-bottom: 1px solid black;
 }
-.leftNavList{
+
+.leftNavList {
     height: 715px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .leftNavList:after {
     content: '';
     display: block;
@@ -114,14 +123,16 @@ a,span,p, h1,h2,h3,h4,h5,h6{
     bottom: 0;
     border-bottom: 1px solid black;
 }
-.leftNavList li{
+
+.leftNavList li {
     height: 11.11%;
     display: flex;
     align-items: center;
-    width: 100% ;
+    width: 100%;
 
 }
-.leftNavList li a{
+
+.leftNavList li a {
     text-transform: uppercase;
     height: 55px;
     line-height: 55px;
@@ -129,6 +140,7 @@ a,span,p, h1,h2,h3,h4,h5,h6{
     padding-left: 50px;
     position: relative;
 }
+
 .leftNavList li:hover {
     -webkit-transform: scaleX(1.05);
     -moz-transform: scaleX(1.05);
@@ -137,7 +149,8 @@ a,span,p, h1,h2,h3,h4,h5,h6{
     transform: scaleX(1.05);
 
 }
-.leftNavList li a:hover,.leftNavList .ui-tabs-active a{
+
+.leftNavList li a:hover, .leftNavList .ui-tabs-active a {
     background-color: #39464a;
     color: #ffffff;
     -webkit-transition: all 0.2s ease-in;
@@ -147,18 +160,19 @@ a,span,p, h1,h2,h3,h4,h5,h6{
     transition: all 0.2s ease-in;
 }
 
-
-.leftNavList li a:hover:after{
+.leftNavList li a:hover:after {
     position: absolute;
     content: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAPCAQAAACYNP27AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCREWBwVVbf8oAAAAnUlEQVQY02NsYKgXZdjCkN94ggEJMP7nYDjNoMPwicGt8SRCmJnxjwM/gwsDO0OYw/6DT2HCTAwMjR0MlQwMDHwMu+rNkYSxSTBBKHQJJpg2VAnGBiRn1W9g8GdgYHjBoMyEJJjJ4M/AwPCdIbrxGxOS4DQGBobvDD6N++BmowpChdEFGRiYsAlCwuQygwqqICRM1jPYMyQiCzIwAAAfwzgDLlePVwAAAABJRU5ErkJggg==");
     right: 20px;
     top: 0;
 }
-                                                    /* Navigation Header*/
-header{
+
+/* Navigation Header*/
+header {
     background-color: #c2c8ca;
 }
-.navMenu{
+
+.navMenu {
     float: left;
     width: calc(100% - 210px);
     display: flex;
@@ -166,11 +180,13 @@ header{
     height: 60px;
     align-items: center;
 }
-.navMenu a{
+
+.navMenu a {
     padding: 23px 50px 28px;
 
 }
-.navMenu li:hover a{
+
+.navMenu li:hover a {
     background-color: #39464a;
     color: #ffffff;
     -webkit-transition: all 0.4s;
@@ -180,7 +196,7 @@ header{
     transition: all 0.4s;
 }
 
-.socials{
+.socials {
     width: 200px;
     display: flex;
     float: right;
@@ -188,41 +204,52 @@ header{
     padding: 0 27px;
     justify-content: space-between;
 }
-.socials span{
+
+.socials span {
     font-size: 23px;
 }
-.socials li:hover{
+
+.socials li:hover {
     opacity: 0.5;
 }
-    /* content */
+
+/* content */
 .content {
     margin-top: 20px;
     min-height: calc(100vh - 153px);
 }
-                                                /*  content  */
-.banner{
+
+/*  content  */
+.banner {
     height: 1116px;
 }
-.grid{
+
+.grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+
 
 }
-.catalog{
+
+.catalog {
     margin-bottom: 40px;
 }
-.main{
+
+.main {
     margin-bottom: 30px;
 }
-.card{
+
+.card {
     height: 640px;
     overflow: hidden;
     width: 31.5%;
     margin-bottom: 30px;
     min-width: 280px;
 }
-.card:hover .cardInfo{
+
+.card:hover .cardInfo {
     background-color: #39464a;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -230,7 +257,8 @@ header{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.card:hover .cardInfo span{
+
+.card:hover .cardInfo span {
     color: #ffffff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -238,30 +266,34 @@ header{
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.card img{
+
+.card img {
     display: block;
     max-height: 555px;
 }
 
-.cardInfo{
+.cardInfo {
     height: 87px;
     background-color: #c2c8ca;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.cardInfo>span{
+
+.cardInfo > span {
     display: block;
     text-align: center;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
 }
-.bold{
+
+.bold {
     font-weight: 700;
     font-size: 24px;
 }
-.articlesNav{
+
+.articlesNav {
     width: 115px;
     text-align: center;
     margin: 0 auto;
@@ -270,82 +302,98 @@ header{
     align-items: baseline;
 }
 
-.articlesNav li{
+.articlesNav li {
     display: inline-block;
     cursor: pointer;
 }
-.articlesNav a{
+
+.articlesNav a {
     color: #1e1e1e;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     font-family: "PT Serif";
 }
-.articlesNav li+li{
+
+.articlesNav li + li {
     margin-left: 8px;
 }
-.articlesNav .ui-tabs-active a {
-    font-size: 48px!important;
-    color: #39464a!important;
-}
-                                                    /*  footer  */
 
-.footerInner{
+.articlesNav .ui-tabs-active a {
+    font-size: 48px !important;
+    color: #39464a !important;
+}
+
+/*  footer  */
+
+.footerInner {
     width: 500px;
     background-color: #c2c8ca;
     float: right;
 }
-.footerLogo{
+
+.footerLogo {
     height: 75px;
     width: 170px;
-    background:  #39464a  url("../img/png/logofooter.png")  center no-repeat;
+    background: #39464a url("../img/png/logofooter.png") center no-repeat;
     float: right;
 }
-.copyright{
+
+.copyright {
     float: left;
     width: 330px;
     text-align: right;
     padding: 15px 15px 0 0;
 }
-.copyright span,.copyright a{
+
+.copyright span, .copyright a {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
     font-family: "Roboto Condensed";
 }
-.createdBy{
+
+.createdBy {
     font-weight: 700;
 }
-                                                            /* Card More */
-.cardWrapper{
+
+/* Card More */
+.cardWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 100px;
 }
-.cardLeftWrapper{
+
+.cardLeftWrapper {
     width: 51%;
 }
-.cardRight{
+
+.cardRight {
     width: 45%;
 }
-.cardLeftWrapper img{
+
+.cardLeftWrapper img {
     width: 100%;
 }
-.cardSizes{
+
+.cardSizes {
     display: flex;
     flex-direction: column;
     height: 69px;
     position: relative;
 }
-.cardSizes span{
+
+.cardSizes span {
     text-transform: uppercase;
     line-height: 20px;
 }
-.cardSizes span+span{
+
+.cardSizes span + span {
     margin-top: 7px;
 }
-.cardSizes:after,.cardAbout:after {
+
+.cardSizes:after, .cardAbout:after {
     content: '';
     display: block;
     position: absolute;
@@ -354,111 +402,252 @@ header{
     bottom: 0;
     border-bottom: 1px solid black;
 }
-.cardAbout{
+
+.cardAbout {
     padding: 18px 0;
     position: relative;
 }
-.cardAbout p{
+
+.cardAbout p {
     line-height: 24px;
 }
-.sizesLength{
+
+.sizesLength {
     display: flex;
     flex-direction: column;
     padding: 15px 0 42px;
 
 }
+
 .sizesLength span {
     font-size: 20px;
     line-height: 24px;
 }
 
-.colorsWrap .bold{
+.colorsWrap .bold {
     font-size: 16px;
     text-transform: uppercase;
     line-height: 16px;
 }
-.cardRightGallery{
+
+.cardRightGallery {
     max-height: 525px;
     display: flex;
 }
-.cardBackWrapper{
+
+.cardBackWrapper {
     float: left;
     width: 350px;
 }
-.cardBackWrapper img{
+
+.cardBackWrapper img {
     width: 100%;
     display: block;
 }
-.colorsWrap{
+
+.colorsWrap {
     width: 100px;
     float: left;
     margin-left: 20px;
-    height: 100%    ;
+    height: 100%;
 }
+
 .cardColors img {
     width: 100%;
     display: block;
 }
-.cardColors{
+
+.cardColors {
     margin-top: 15px;
 }
-.cardColors div+div{
+
+.cardColors div + div {
     margin-top: 10px;
 }
-                                            /* About */
 
-.about{
+/* About */
+
+.about {
     padding-bottom: 13px;
 }
-.aboutImages{
+
+.aboutImages {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-.aboutImages div{
+
+.aboutImages div {
     width: 32%;
     overflow: hidden;
     min-width: 300px;
     height: 564px;
 }
-.aboutImages img{
+
+.aboutImages img {
     height: 100%;
 }
-.aboutText{
+
+.aboutText {
     margin-top: 13px;
     position: relative;
 }
-.aboutText p{
+
+.aboutText p {
     line-height: 30px;
 }
-.aboutText p+p{
+
+.aboutText p + p {
     margin-top: 29px;
 }
-.aboutLogo{
+
+.aboutLogo {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-                            /* Cooperation */
-.cooperationInner{
+
+/* Cooperation */
+.cooperationInner {
     position: relative;
 
 }
-.cooperationInner p{
+
+.cooperationInner p {
     margin-top: 30px;
     line-height: 30px;
     font-weight: 700;
 }
-.cooperationInner h2{
+
+.cooperationInner h2 {
     text-transform: uppercase;
     font-size: 24px;
     color: #333333;
     padding-top: 10px;
 }
-.cooperationInner img{
+
+.cooperationInner img {
     position: absolute;
     content: '';
     right: 0;
     top: 10px;
 }
+.trigger{
+    text-align: center;
+    height: 40px;
+    display: none;
+}
+.trigger span{
+    line-height: 40px;
+
+}
+.burger{
+    display: none;
+}
+
+
+ /*Media Queries*/
+@media (min-width: 320px)and (max-width: 768px) {
+    .leftNavWrapper {
+        width: 320px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        z-index: 2;
+    }
+    .leftNavWrapper {
+        left: -320px;
+    }
+    .leftNavWrapper.show{
+        left: -30px;
+    }
+    .trigger{
+        display: block;
+    }
+    .socials {
+        display: none;
+    }
+    .burger,.burgerBack{
+        height: 40px;
+        width: 20px;
+        display: block;
+        position: absolute;
+        top: calc(50% - 20px);
+        right: -23px;
+        background: url("../img/png/icons8-toolbar-16.png") center no-repeat;
+        background-size: contain;
+    }
+    .containerInner {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navMenu a {
+        padding: 22px 5px 28px;
+    }
+
+    a, span, p, h1, h2, h3, h4, h5, h6 {
+        font-size: 14px;
+    }
+
+    .navMenu {
+        display: none;
+        height: auto;
+        width: 100%;
+
+    }
+
+    .navMenu li {
+        text-align: center;
+        display: block;
+    }
+
+    .navMenu a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .grid {
+        justify-content: center;
+    }
+
+    .navMenu li:hover {
+        background-color: #39464a;
+        color: #ffffff;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+}
+
+/*@media (min-width: 1281px) and  (max-width: 1500px) {*/
+    /*.cardAbout p {*/
+        /*line-height: 20px;*/
+    /*}*/
+
+    /*.sizesLength span {*/
+        /*font-size: 16px;*/
+        /*line-height: 19px;*/
+    /*}*/
+
+    /*.sizesLength {*/
+        /*padding: 1px 0 7px;*/
+    /*}*/
+
+    /*.cardAbout {*/
+        /*padding: 7px 0;*/
+    /*}*/
+
+    /*.cardSizes {*/
+        /*height: 56px;*/
+    /*}*/
+
+    /*.cardColors div + div {*/
+        /*margin-top: 8px;*/
+    /*}*/
+/*}*/
