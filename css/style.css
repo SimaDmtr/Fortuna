@@ -558,6 +558,9 @@ header {
         transition: all 0.3s;
         z-index: 2;
     }
+    .leftNavList{
+        height: calc(100vh - 152px);
+    }
     .leftNavWrapper {
         left: -320px;
     }
