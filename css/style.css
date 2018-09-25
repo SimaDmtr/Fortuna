@@ -221,7 +221,7 @@ header {
 
 /*  content  */
 .banner {
-    height: 1116px;
+    height: 100vh;
 }
 .banner img{
     width: 100%;
