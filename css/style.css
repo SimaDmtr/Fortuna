@@ -581,6 +581,7 @@ header {
     }
     .leftNavList{
         height: calc(100vh - 152px);
+        margin-top: 10px;
     }
     .leftNavWrapper {
         left: -320px;
@@ -649,16 +650,21 @@ header {
     .aboutImages{
         display: none;
     }
-    .cooperationInner img{
-        display: none;
-    }
+
+
 }
 
 @media (min-width: 1200px)  and (max-width: 1500px){
     .navMenu a {
         padding: 23px 5px 28px;
     }
-
+    .cooperationInner img{
+        display: none;
+    }
+    .aboutImages div {
+        min-width: unset;
+        height: 470px;
+    }
 
 
 }
