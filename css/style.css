@@ -223,7 +223,9 @@ header {
 .banner {
     height: 1116px;
 }
-
+.banner img{
+    width: 100%;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -246,7 +248,7 @@ header {
     overflow: hidden;
     width: 31.5%;
     margin-bottom: 30px;
-    min-width: 280px;
+    min-width: 300px;
 }
 
 .card:hover .cardInfo {
@@ -327,21 +329,21 @@ header {
 /*  footer  */
 
 .footerInner {
-    width: 500px;
+    max-width: 500px;
     background-color: #c2c8ca;
     float: right;
 }
 
 .footerLogo {
-    height: 75px;
-    width: 170px;
-    background: #39464a url("../img/png/logofooter.png") center no-repeat;
+    min-height: 75px;
+    width: 40%;
+    background: #39464a url("../img/png/logofooter.png")center no-repeat;
     float: right;
 }
 
 .copyright {
     float: left;
-    width: 330px;
+    width:60%;
     text-align: right;
     padding: 15px 15px 0 0;
 }
@@ -491,7 +493,6 @@ header {
 
 .aboutText {
     margin-top: 13px;
-    position: relative;
 }
 
 .aboutText p {
@@ -502,11 +503,6 @@ header {
     margin-top: 29px;
 }
 
-.aboutLogo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 /* Cooperation */
 .cooperationInner {
@@ -537,18 +533,34 @@ header {
     text-align: center;
     height: 40px;
     display: none;
+    background: url("../img/png/burger.png") center no-repeat;
 }
-.trigger span{
-    line-height: 40px;
 
-}
 .burger{
     display: none;
 }
 
 
  /*Media Queries*/
-@media (min-width: 320px)and (max-width: 1081px) {
+@media (max-width: 466px) {
+.cardRightGallery{
+    width: 100vw;
+}
+    .cardBackWrapper{
+        width: 60vw;
+    }
+    .colorsWrap{
+        width: 21.2vw;
+    }
+    .colorsWrap span{
+        display: none;
+    }
+    .cardColors{
+        margin-top: 0;
+    }
+
+}
+@media (min-width: 320px)and (max-width: 1199px) {
     .leftNavWrapper {
         width: 320px;
         -webkit-transition: all 0.3s;
@@ -557,6 +569,15 @@ header {
         -o-transition: all 0.3s;
         transition: all 0.3s;
         z-index: 2;
+    }
+    .cardLeftWrapper{
+        display: none;
+    }
+    .cardRight{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
     }
     .leftNavList{
         height: calc(100vh - 152px);
@@ -573,7 +594,7 @@ header {
     .socials {
         display: none;
     }
-    .burger,.burgerBack{
+    .burger{
         height: 40px;
         width: 20px;
         display: block;
@@ -585,7 +606,6 @@ header {
     }
     .containerInner {
         width: 100%;
-        padding: 0;
     }
 
     .navMenu a {
@@ -614,7 +634,7 @@ header {
     }
 
     .grid {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .navMenu li:hover {
@@ -626,31 +646,19 @@ header {
         -o-transition: all 0.4s;
         transition: all 0.4s;
     }
+    .aboutImages{
+        display: none;
+    }
+    .cooperationInner img{
+        display: none;
+    }
 }
 
-/*@media (min-width: 1281px) and  (max-width: 1500px) {*/
-    /*.cardAbout p {*/
-        /*line-height: 20px;*/
-    /*}*/
+@media (min-width: 1200px)  and (max-width: 1500px){
+    .navMenu a {
+        padding: 23px 5px 28px;
+    }
 
-    /*.sizesLength span {*/
-        /*font-size: 16px;*/
-        /*line-height: 19px;*/
-    /*}*/
 
-    /*.sizesLength {*/
-        /*padding: 1px 0 7px;*/
-    /*}*/
 
-    /*.cardAbout {*/
-        /*padding: 7px 0;*/
-    /*}*/
-
-    /*.cardSizes {*/
-        /*height: 56px;*/
-    /*}*/
-
-    /*.cardColors div + div {*/
-        /*margin-top: 8px;*/
-    /*}*/
-/*}*/
+}

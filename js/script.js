@@ -20,15 +20,37 @@ $(document).ready(function () {
         $(".cardLeft").owlCarousel({
             items: 1,
             dots: false,
+
         });
     });
     $(document).ready(function () {
         $(".cardBack").owlCarousel({
             items: 1,
             dots: false,
+            mouseDrag: false,
+            touchDrag:false
         });
     });
 
+    if($(window).width() < 767) {
+        $(document).ready(function () {
+            $(".mobile").owlCarousel({
+                items: 1,
+                dots: false,
+                startPosition:1,
+                loop: true
+            });
+        });
+    }else{
+        $(document).ready(function () {
+            $(".mobile").owlCarousel({
+                items: 1,
+                dots: false,
+                mouseDrag: false,
+                touchDrag:false
+            });
+        });
+    }
 
     $('.trigger').click(function () {
         $('.navMenu').slideToggle(500);
