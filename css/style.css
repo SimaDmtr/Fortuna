@@ -671,6 +671,8 @@ header {
         min-width: unset;
         height: 470px;
     }
-
+    .leftNavList{
+        height: calc(100vh -  200px);
+    }
 
 }
