@@ -537,7 +537,7 @@ header {
 
 }
 .trigger.pressed{
-   
+
     background: #39464a url("../img/png/burger_pressed.png") center no-repeat;
 }
 .burger{
@@ -584,7 +584,7 @@ header {
         justify-content: left;
     }
     .leftNavList{
-        height: calc(100vh - 152px);
+        height: calc(100vh - 180px);
         margin-top: 10px;
     }
     .leftNavWrapper {
@@ -654,7 +654,10 @@ header {
     .aboutImages{
         display: none;
     }
-
+    .leftNavList li a {
+        height: 45px;
+        line-height: 45px;
+    }
 
 }
 
