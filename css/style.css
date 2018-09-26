@@ -534,8 +534,12 @@ header {
     height: 40px;
     display: none;
     background: url("../img/png/burger.png") center no-repeat;
-}
 
+}
+.trigger.pressed{
+   
+    background: #39464a url("../img/png/burger_pressed.png") center no-repeat;
+}
 .burger{
     display: none;
 }
@@ -596,14 +600,14 @@ header {
         display: none;
     }
     .burger{
-        height: 40px;
-        width: 20px;
+        height: 60px;
+        width: 40px;
         display: block;
         position: absolute;
         top: calc(50% - 20px);
-        right: -23px;
+        right: -30px;
         background: url("../img/png/icons8-toolbar-16.png") center no-repeat;
-        background-size: contain;
+
     }
     .containerInner {
         width: 100%;

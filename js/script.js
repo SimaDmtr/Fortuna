@@ -53,6 +53,10 @@ $(document).ready(function () {
     }
 
     $('.trigger').click(function () {
+        if($(this).hasClass('pressed')){
+            $(this).removeClass('pressed')
+        }else{
+        $(this).addClass('pressed')}
         $('.navMenu').slideToggle(500);
     });
 
