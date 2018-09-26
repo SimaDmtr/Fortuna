@@ -584,8 +584,7 @@ header {
         justify-content: left;
     }
     .leftNavList{
-        height: calc(100vh - 180px);
-        margin-top: 10px;
+        height: calc(100vh - 195px);
     }
     .leftNavWrapper {
         left: -320px;
