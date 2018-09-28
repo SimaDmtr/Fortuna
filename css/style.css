@@ -272,6 +272,8 @@ header {
 .card img {
     display: block;
     max-height: 555px;
+
+    height: 100%;
 }
 
 .cardInfo {
@@ -562,6 +564,9 @@ header {
     .cardColors{
         margin-top: 0;
     }
+    .card{
+        min-width: 370px;
+    }
 
 }
 @media (min-width: 320px)and (max-width: 1199px) {
@@ -604,7 +609,7 @@ header {
         display: block;
         position: absolute;
         top: calc(50% - 20px);
-        right: -30px;
+        right: -32px;
         background: url("../img/png/icons8-toolbar-16.png") center no-repeat;
 
     }
